@@ -8,7 +8,7 @@ const personalMoovieDB = {
    privat: false,
 };
 
-let allreadyWatchedFilms = prompt('Один из последних просмотренніх фильмов?');
+let allreadyWatchedFilms = +prompt('Один из последних просмотренных фильмов?');
 let raiting = prompt('На сколько оцените его?');
 
 personalMoovieDB.movies[allreadyWatchedFilms] = raiting;
