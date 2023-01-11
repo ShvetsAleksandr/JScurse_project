@@ -8,7 +8,10 @@ const personalMoovieDB = {
    privat: false,
 };
 
-let allreadyWatchedFilms = +prompt('Один из последних просмотренных фильмов?');
-let raiting = prompt('На сколько оцените его?');
+let a = +prompt('Один из последних просмотренных фильмов?');
+let b = prompt('На сколько оцените его?');
+let c = +prompt('Один из последних просмотренных фильмов?');
+let d = prompt('На сколько оцените его?');
 
-personalMoovieDB.movies[allreadyWatchedFilms] = raiting;
+personalMoovieDB.movies[a] = b;
+personalMoovieDB.movies[c] = d;
