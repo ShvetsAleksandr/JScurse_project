@@ -11,13 +11,13 @@ const personalMoovieDB = {
 };
 
 for (let i = 0; i < 2; i++){
-   let filmName = prompt('Один из последних просмотренных фильмов?');
-   let yourRating = prompt('На сколько оцените его?');
-   if (filmName.length > 50 || filmName === null || yourRating === null || yourRating.length <= 0 || filmName.length <= 0) {
+   let a = prompt('Один из последних просмотренных фильмов?');
+   let b = prompt('На сколько оцените его?');
+   if (a.length > 50 || a === null || b === null || b.length <= 0 || a.length <= 0) {
       i--;
       continue;
    }
-   personalMoovieDB.movies[filmName] = yourRating;
+   personalMoovieDB.movies[a] = b;
 }
 
 if (personalMoovieDB.count < 10 && personalMoovieDB.count > 0) {
