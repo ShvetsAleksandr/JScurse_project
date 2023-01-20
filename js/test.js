@@ -1,21 +1,25 @@
-function sayHello(userName) {
-   return `Привет, ${userName}`;
-}
-
-function returnNeighboringNumbers(number) {
-   return [number - 1, number, number + 1];
-}
-
-console.log(returnNeighboringNumbers(5));
-
-function getMathResult(base, nop) {
-   if (typeof nop !== 'number' || nop <= 0) {
-      return base;
-   }
-   let result = base;
-   for (let i = 2; i <= nop; i++) {
-      result += `---${base * i}`;
+function fib(arg) {
+   if (arg === 0 || typeof arg !== 'number' || arg % 1 !== 0) {
+      return '';
    }
 
+   if(arg === 1) {
+      return '0';
+   }
+   
+   let next = 1;
+   let prev = 0;
+   let some;
+   let result = `${prev} ${next}`;
+
+   for (let i = 0; i < arg - 2; i++) {
+      result += ' ' + (next + prev);
+      some = next + prev;
+      prev = next;
+      next = some;
+
+   }
    return result;
 }
+
+console.log(fib(8));

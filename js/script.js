@@ -22,7 +22,7 @@ const rememberMyFilms = () => {
    for (let i = 0; i < 2; i++){
       let a = prompt('Один из последних просмотренных фильмов?');
       let b = prompt('На сколько оцените его?');
-      if (a.length > 50 || a === null || b === null || b.length <= 0 || a.length <= 0) {
+      if (a.length > 50 || a === null || b === null || b.trim().length <= 0 || a.trim().length <= 0) {
          i--;
          continue;
       }
