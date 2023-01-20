@@ -1,4 +1,5 @@
-"use strict"
+"use strict";
+
 let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?');
 
 const personalMoovieDB = {
@@ -16,3 +17,5 @@ let d = prompt('На сколько оцените его?');
 
 personalMoovieDB.movies[a] = b;
 personalMoovieDB.movies[c] = d;
+
+
